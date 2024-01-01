@@ -1,0 +1,32 @@
+/* Your regular styles for larger screens */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 500px;
+    text-align: center;
+    font-family: verdana;
+}
+
+body {
+    background-image: url(img.png.jpeg);
+    background-color: #f0f0f0; /* Fallback color */
+    height: 100vh;
+    width: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px), (min-width: 300px) {
+    h1 {
+        font-size: 60px; /* Adjust the font size for smaller screens */
+    }
+
+    body {
+        background-size: cover; /* Adjust background size for smaller screens */
+    }
+}
